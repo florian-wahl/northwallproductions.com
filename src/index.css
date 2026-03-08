@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base overrides ─────────────────────────────────────── */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #07090f;
+    color: #e8edf5;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar            { width: 5px; }
+  ::-webkit-scrollbar-track      { background: #07090f; }
+  ::-webkit-scrollbar-thumb      { background: #243248; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover{ background: #3a8ec8; }
+
+  /* Remove default select arrow */
+  select { -webkit-appearance: none; appearance: none; }
+}
+
+@layer utilities {
+  /* Line clamp (fallback for older Tailwind JIT) */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Animation delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-350 { animation-delay: 350ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
