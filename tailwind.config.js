@@ -1,61 +1,51 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
         bg: {
-          base:         '#f4f8f9',
-          elevated:     '#eaf3f5',
+          base:         '#f8f8f8',
+          elevated:     '#f0f0f0',
           card:         '#ffffff',
-          'card-hover': '#f0f7f9',
-        },
-        glacier: {
-          DEFAULT: '#0b6e7d',
-          mid:     '#1a8fa0',
-          light:   '#5ab5c4',
-          pale:    '#c8e8ed',
-          wash:    '#e8f5f7',
+          'card-hover': '#f4f4f4',
         },
         ink: {
-          DEFAULT: '#0d1d22',
-          muted:   '#3d6070',
-          dim:     '#7aa0aa',
-          ghost:   '#b8d0d8',
+          DEFAULT: '#111111',
+          muted:   '#555555',
+          dim:     '#999999',
+          ghost:   '#cccccc',
         },
         edge: {
-          DEFAULT: '#cde6ec',
-          light:   '#e2f1f5',
-          strong:  '#a0c8d5',
+          DEFAULT: '#e0e0e0',
+          light:   '#eeeeee',
+          strong:  '#b0b0b0',
         },
         status: {
-          completed: '#0a6e45',
-          upcoming:  '#7a5800',
-          dev:       '#5a2a8a',
+          completed: '#111111',
+          upcoming:  '#555555',
+          dev:       '#333333',
         },
       },
       fontFamily: {
-        sans:    ['Nunito', 'sans-serif'],
-        heading: ['Nunito', 'sans-serif'],
-        body:    ['Nunito', 'sans-serif'],
+        sans:    ['Montserrat', 'sans-serif'],
+        heading: ['Montserrat', 'sans-serif'],
+        body:    ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
-        'poster-1': 'linear-gradient(160deg, #b8dde4 0%, #3898ad 45%, #0b5e6e 100%)',
-        'poster-2': 'linear-gradient(160deg, #b8cce0 0%, #3a6898 45%, #162e58 100%)',
-        'poster-3': 'linear-gradient(160deg, #b0dece 0%, #1e8868 45%, #084838 100%)',
-        'poster-4': 'linear-gradient(160deg, #d0c4e4 0%, #7040a8 45%, #340a6a 100%)',
-        'poster-5': 'linear-gradient(160deg, #b8d8c8 0%, #2a9858 45%, #0a4828 100%)',
-        'poster-6': 'linear-gradient(160deg, #c0cede 0%, #405870 45%, #0e1e2e 100%)',
+        'poster-1': 'linear-gradient(165deg, #d8d8d8 0%, #686868 40%, #0a0a0a 100%)',
+        'poster-2': 'linear-gradient(165deg, #e4e4e4 0%, #848484 40%, #1c1c1c 100%)',
+        'poster-3': 'linear-gradient(165deg, #cccccc 0%, #505050 40%, #080808 100%)',
+        'poster-4': 'linear-gradient(165deg, #dcdcdc 0%, #747474 40%, #141414 100%)',
+        'poster-5': 'linear-gradient(165deg, #c4c4c4 0%, #404040 40%, #060606 100%)',
+        'poster-6': 'linear-gradient(165deg, #ececec 0%, #9c9c9c 40%, #2c2c2c 100%)',
       },
       animation: {
-        'fade-up': 'fadeUp 0.75s ease both',
+        'fade-up': 'fadeUp 0.8s ease both',
       },
       keyframes: {
         fadeUp: {
-          from: { opacity: '0', transform: 'translateY(20px)' },
+          from: { opacity: '0', transform: 'translateY(18px)' },
           to:   { opacity: '1', transform: 'translateY(0)' },
         },
       },

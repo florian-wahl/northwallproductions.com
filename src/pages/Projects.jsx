@@ -9,12 +9,8 @@ const upcoming  = getByStatus('upcoming');
 function SectionLabel({ children, count }) {
   return (
     <div className="flex items-center gap-4 mb-8">
-      <h2 className="font-heading font-extrabold text-2xl text-ink tracking-tight whitespace-nowrap">
-        {children}
-      </h2>
-      <span className="text-[0.68rem] font-bold text-ink-dim bg-bg-elevated border border-edge px-2 py-0.5 rounded-full">
-        {count}
-      </span>
+      <h2 className="font-heading font-black text-[1.4rem] text-ink uppercase tracking-tight whitespace-nowrap">{children}</h2>
+      <span className="text-[0.62rem] font-bold text-ink-dim bg-bg-elevated border border-edge px-2 py-0.5 tracking-widest">{count}</span>
       <div className="flex-1 h-px bg-edge" />
     </div>
   );
@@ -24,30 +20,20 @@ export default function Projects() {
   return (
     <div className="bg-bg-base min-h-screen">
 
-      {/* ── PAGE HERO ──────────────────────────────────────── */}
-      <div className="relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: [
-              'radial-gradient(ellipse 100% 60% at 50% -10%, rgba(100,210,200,0.09) 0%, transparent 65%)',
-              '#f4f8f9',
-            ].join(', '),
-          }}
-        />
-        <SnowCanvas count={45} />
-        <div className="relative z-10 max-w-[1200px] mx-auto px-8 pt-36 pb-28">
-          <p className="text-[0.7rem] font-bold tracking-[0.28em] uppercase text-glacier mb-4 flex items-center gap-3">
-            <span className="block w-6 h-px bg-glacier/50" />
+      <div className="relative overflow-hidden bg-[#f8f8f8]">
+        <SnowCanvas count={40} />
+        <div className="relative z-10 max-w-[1200px] mx-auto px-8 pt-40 pb-36">
+          <p className="text-[0.62rem] font-bold tracking-[0.32em] uppercase text-ink-dim mb-5 flex items-center gap-3">
+            <span className="block w-8 h-px bg-edge-strong" />
             Portfolio
           </p>
           <h1
-            className="font-heading font-black text-ink tracking-tight leading-tight"
-            style={{ fontSize: 'clamp(2.5rem, 7vw, 5rem)' }}
+            className="font-heading font-black text-ink uppercase tracking-tight leading-none mb-6"
+            style={{ fontSize: 'clamp(2.5rem, 8vw, 6rem)' }}
           >
-            Our Projects
+            Our<br />Projects
           </h1>
-          <p className="text-ink-muted leading-8 mt-4 max-w-[55ch]">
+          <p className="text-ink-muted leading-8 max-w-[50ch] font-light">
             From debut short films to multi-episode series, every NorthWall project shares a
             commitment to place, character, and cinematic honesty.
           </p>
@@ -55,30 +41,27 @@ export default function Projects() {
         <MountainSilhouette />
       </div>
 
-      {/* Divider */}
       <div className="h-px bg-edge" />
 
-      {/* ── UPCOMING ──────────────────────────────────────── */}
       <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-8">
         <SectionLabel count={upcoming.length}>Upcoming</SectionLabel>
         {upcoming.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {upcoming.map(p => <ProjectCard key={p.id} project={p} />)}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-edge border border-edge">
+            {upcoming.map(p => <div key={p.id} className="bg-bg-base"><ProjectCard project={p} /></div>)}
           </div>
         ) : (
-          <p className="text-ink-muted text-sm">No upcoming projects at this time. Check back soon.</p>
+          <p className="text-ink-muted text-sm font-light">No upcoming projects at this time.</p>
         )}
       </section>
 
-      {/* ── COMPLETED ─────────────────────────────────────── */}
-      <section className="max-w-[1200px] mx-auto px-8 pt-12 pb-24">
+      <section className="max-w-[1200px] mx-auto px-8 pt-14 pb-24">
         <SectionLabel count={completed.length}>Completed</SectionLabel>
         {completed.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {completed.map(p => <ProjectCard key={p.id} project={p} />)}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-edge border border-edge">
+            {completed.map(p => <div key={p.id} className="bg-bg-base"><ProjectCard project={p} /></div>)}
           </div>
         ) : (
-          <p className="text-ink-muted text-sm">No completed projects yet.</p>
+          <p className="text-ink-muted text-sm font-light">No completed projects yet.</p>
         )}
       </section>
 
