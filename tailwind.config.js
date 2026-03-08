@@ -8,62 +8,56 @@ export default {
     extend: {
       colors: {
         bg: {
-          base:       '#07090f',
-          elevated:   '#0c1018',
-          card:       '#0f1520',
-          'card-hover': '#131c2a',
+          base:         '#f4f8f9',
+          elevated:     '#eaf3f5',
+          card:         '#ffffff',
+          'card-hover': '#f0f7f9',
         },
-        ice: {
-          DEFAULT:    '#5cb8e8',
-          dim:        '#3a8ec8',
-          light:      '#7ecff5',
+        glacier: {
+          DEFAULT: '#0b6e7d',
+          mid:     '#1a8fa0',
+          light:   '#5ab5c4',
+          pale:    '#c8e8ed',
+          wash:    '#e8f5f7',
         },
-        surface: {
-          border:       '#1a2535',
-          'border-light': '#243248',
+        ink: {
+          DEFAULT: '#0d1d22',
+          muted:   '#3d6070',
+          dim:     '#7aa0aa',
+          ghost:   '#b8d0d8',
         },
-        frost: {
-          DEFAULT: '#e8edf5',
-          muted:   '#7a8ea8',
-          dim:     '#3d5070',
+        edge: {
+          DEFAULT: '#cde6ec',
+          light:   '#e2f1f5',
+          strong:  '#a0c8d5',
         },
         status: {
-          completed: '#4ade80',
-          upcoming:  '#facc15',
-          dev:       '#a78bfa',
+          completed: '#0a6e45',
+          upcoming:  '#7a5800',
+          dev:       '#5a2a8a',
         },
       },
       fontFamily: {
-        heading: ['"Barlow Condensed"', 'sans-serif'],
-        body:    ['Inter', 'sans-serif'],
-      },
-      letterSpacing: {
-        widest2: '0.25em',
-        widest3: '0.3em',
+        sans:    ['Nunito', 'sans-serif'],
+        heading: ['Nunito', 'sans-serif'],
+        body:    ['Nunito', 'sans-serif'],
       },
       backgroundImage: {
-        // Northern poster gradients — used on project cards
-        'poster-1': 'linear-gradient(145deg, #0a1628 0%, #0d2540 40%, #0e3b5e 100%)',
-        'poster-2': 'linear-gradient(145deg, #0f0a20 0%, #1a1040 40%, #0d1e60 100%)',
-        'poster-3': 'linear-gradient(145deg, #071520 0%, #0a2535 40%, #073040 100%)',
-        'poster-4': 'linear-gradient(145deg, #120a1a 0%, #1e0f38 40%, #2a1050 100%)',
-        'poster-5': 'linear-gradient(145deg, #0a1210 0%, #0d2820 40%, #0a3828 100%)',
-        'poster-6': 'linear-gradient(145deg, #1a1008 0%, #302010 40%, #1a2820 100%)',
+        'poster-1': 'linear-gradient(160deg, #b8dde4 0%, #3898ad 45%, #0b5e6e 100%)',
+        'poster-2': 'linear-gradient(160deg, #b8cce0 0%, #3a6898 45%, #162e58 100%)',
+        'poster-3': 'linear-gradient(160deg, #b0dece 0%, #1e8868 45%, #084838 100%)',
+        'poster-4': 'linear-gradient(160deg, #d0c4e4 0%, #7040a8 45%, #340a6a 100%)',
+        'poster-5': 'linear-gradient(160deg, #b8d8c8 0%, #2a9858 45%, #0a4828 100%)',
+        'poster-6': 'linear-gradient(160deg, #c0cede 0%, #405870 45%, #0e1e2e 100%)',
       },
       animation: {
-        'fade-up': 'fadeUp 0.7s ease both',
+        'fade-up': 'fadeUp 0.75s ease both',
       },
       keyframes: {
         fadeUp: {
-          from: { opacity: '0', transform: 'translateY(24px)' },
+          from: { opacity: '0', transform: 'translateY(20px)' },
           to:   { opacity: '1', transform: 'translateY(0)' },
         },
-      },
-      transitionDelay: {
-        100: '100ms',
-        200: '200ms',
-        350: '350ms',
-        500: '500ms',
       },
     },
   },
