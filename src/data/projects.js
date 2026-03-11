@@ -24,11 +24,9 @@ export const projects = [
     posterClass: 'poster-1',
     featured: false,
     shortDescription:
-      'Nulla in nunc rhoncus, sagittis justo at, iaculis tellus.',
+      'Nightfish follows the unlikely friendship of two overnight aquarium employees.',
     description: [
-      'Phasellus tellus tortor, consequat quis dui in, vestibulum lacinia dolor. Integer hendrerit cursus rutrum. Quisque laoreet mauris in elit pretium scelerisque. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
-      'Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra.',
-      'Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
+      'Nightfish follows the unlikely friendship of two overnight aquarium employees: Sam, a depressed security guard with thwarted ambitions of being a marine biologist, and Piper, a joyfully unbalanced trash-lover who is living out her dream of being a night janitor.',
     ],
     tags: ['Comedy', 'Workplace', 'Drama'],
     director: 'Sophie Niesenbaum',
@@ -37,8 +35,7 @@ export const projects = [
     producers: ['Katie North', 'Daniel Yaiullo'],
     cinematographer: 'Maddalena De Beni',
     awards: [
-      'Award 1',
-      'Award 2'
+      'Winner, Best Episodic, 2024 Festival Cinema',
     ],
   },
 
@@ -57,11 +54,9 @@ export const projects = [
     posterClass: 'poster-2',
     featured: true,
     shortDescription:
-      'Fusce nec libero urna. Mauris malesuada augue dolor, eget dictum odio ultrices. Curabitur, nec sagittis tortor erat a nulla.',
+      'Nightfish follows the unlikely friendship of two overnight aquarium employees.',
     description: [
-      'Phasellus tellus tortor, consequat quis dui in, vestibulum lacinia dolor. Integer hendrerit cursus rutrum. Quisque laoreet mauris in elit pretium scelerisque. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
-      'Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra.',
-      'Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
+      'Nightfish follows the unlikely friendship of two overnight aquarium employees: Sam, a depressed security guard with thwarted ambitions of being a marine biologist, and Piper, a joyfully unbalanced trash-lover who is living out her dream of being a night janitor.',
     ],
     tags: ['Comedy', 'Workplace', 'Drama'],
     director: 'Sophie Niesenbaum',
@@ -83,11 +78,9 @@ export const projects = [
     posterClass: 'poster-3',
     featured: true,
     shortDescription:
-      'Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
+      'When family is stifling and Christmas joy is oppressive, a group of friends escape to a cabin in the woods, only to find the house is haunted - by Christmas.',
     description: [
-      'Phasellus tellus tortor, consequat quis dui in, vestibulum lacinia dolor. Integer hendrerit cursus rutrum. Quisque laoreet mauris in elit pretium scelerisque. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
-      'Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra.',
-      'Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
+      'When family is stifling and Christmas joy is oppressive, a group of friends escape to a cabin in the woods, only to find the house is haunted - by Christmas.',
     ],
     tags: ['Horror', 'Comedy', 'Christmas'],
     director: 'TBD',
