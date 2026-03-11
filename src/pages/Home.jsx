@@ -7,10 +7,10 @@ import ProjectCard from '../components/ProjectCard';
 const featured = getFeatured(3);
 
 const stats = [
-  { number: '6+',   label: 'Projects'  },
-  { number: '3',    label: 'Awards'    },
-  { number: '2',    label: 'Series'    },
-  { number: '2021', label: 'Founded'   },
+  { number: '6+', label: 'Projects' },
+  { number: '3', label: 'Awards' },
+  { number: '2', label: 'Series' },
+  { number: '2021', label: 'Founded' },
 ];
 
 export default function Home() {
@@ -43,8 +43,7 @@ export default function Home() {
             className="text-ink-muted leading-8 max-w-[44ch] mx-auto animate-fade-up [animation-delay:0.25s] font-light"
             style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.05rem)' }}
           >
-            Stories born from the silence and severity of the north.
-            Character-driven film and television rooted in landscape.
+            Independent film and television rooted in unique characters, deep stories, and comedy.
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap mt-10 animate-fade-up [animation-delay:0.38s]">
@@ -83,11 +82,11 @@ export default function Home() {
               className="font-heading font-black text-ink uppercase tracking-tight leading-tight mb-8"
               style={{ fontSize: 'clamp(2rem, 4.5vw, 3rem)' }}
             >
-              Where Landscape<br />Meets Story
+              The Pursuit of <br /> Creative Stories
             </h2>
             <div className="space-y-5 text-ink-muted leading-8 font-light text-[0.95rem]">
               <p>
-                Founded in 2021, NorthWall Productions was built on a simple belief: the north — its
+                Founded in 2026, NorthWall Productions was built on a simple belief: the north — its
                 silence, its severity, its extraordinary light — is one of cinema's most under-explored
                 territories.
               </p>

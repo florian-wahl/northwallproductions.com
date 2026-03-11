@@ -33,11 +33,12 @@ export default function Projects() {
           >
             Our<br />Projects
           </h1>
-          <p className="text-ink-muted leading-8 max-w-[50ch] font-light">
+          <p className="text-ink leading-8 max-w-[50ch] font-light">
             From debut short films to multi-episode series, every NorthWall project shares a
             commitment to place, character, and cinematic honesty.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%)' }} />
         <MountainSilhouette />
       </div>
 
