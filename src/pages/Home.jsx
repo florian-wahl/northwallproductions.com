@@ -58,7 +58,7 @@ export default function Home() {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-transparent border border-edge-strong text-ink-muted font-bold text-[0.75rem] tracking-[0.15em] uppercase
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-white border border-edge-strong text-ink-muted font-bold text-[0.75rem] tracking-[0.15em] uppercase
                          hover:border-ink hover:text-ink hover:-translate-y-0.5
                          transition-all duration-200"
             >

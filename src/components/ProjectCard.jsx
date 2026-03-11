@@ -44,7 +44,7 @@ export default function ProjectCard({ project }) {
         <div className="flex items-center gap-2 mb-3">
           <span className="text-[0.62rem] font-bold tracking-[0.18em] uppercase text-ink-dim">{type}</span>
           <span className="w-[3px] h-[3px] rounded-full bg-ink-ghost" aria-hidden="true" />
-          <span className="text-[0.62rem] text-ink-ghost font-medium">{year}</span>
+          <span className="text-[0.62rem] text-ink-dim font-medium">{year}</span>
         </div>
 
         <h3 className="font-heading font-bold text-[1.15rem] text-ink leading-snug mb-3 tracking-tight">
@@ -58,7 +58,7 @@ export default function ProjectCard({ project }) {
         <div className="flex items-center justify-between pt-4 border-t border-edge-light">
           <div className="flex gap-1.5 flex-wrap">
             {tags.slice(0, 3).map(tag => (
-              <span key={tag} className="text-[0.58rem] font-bold tracking-[0.1em] uppercase text-ink-ghost px-2 py-0.5 border border-edge-light">
+              <span key={tag} className="text-[0.58rem] font-bold tracking-[0.1em] uppercase text-ink-dim px-2 py-0.5 border border-edge-light">
                 {tag}
               </span>
             ))}

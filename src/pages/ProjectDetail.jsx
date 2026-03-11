@@ -44,15 +44,15 @@ export default function ProjectDetail() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-8 pb-10 w-full">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-white/70">{type}</span>
-            <span className="w-1 h-1 rounded-full bg-white/30" />
-            <span className="text-[0.6rem] text-white/50 font-medium">{year}</span>
+            <span className="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-ink-muted">{type}</span>
+            <span className="w-1 h-1 rounded-full bg-ink-ghost" />
+            <span className="text-[0.6rem] text-ink-dim font-medium">{year}</span>
             <span className={`text-[0.6rem] font-bold tracking-[0.2em] uppercase px-2.5 py-1 bg-white/90 backdrop-blur-sm ${badge.cls}`}>
               {badge.label}
             </span>
           </div>
           <h1
-            className="font-heading font-black text-white uppercase tracking-tight leading-none drop-shadow-md"
+            className="font-heading font-black text-ink uppercase tracking-tight leading-none"
             style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)' }}
           >
             {title}

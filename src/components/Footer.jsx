@@ -35,7 +35,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        <p className="text-[0.68rem] font-medium text-ink-ghost tracking-wide">
+        <p className="text-[0.68rem] font-medium text-ink-dim tracking-wide">
           &copy; {year} NorthWall Productions
         </p>
       </div>

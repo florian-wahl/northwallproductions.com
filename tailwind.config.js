@@ -13,8 +13,8 @@ export default {
         ink: {
           DEFAULT: '#111111',
           muted:   '#555555',
-          dim:     '#999999',
-          ghost:   '#cccccc',
+          dim:     '#666666',
+          ghost:   '#999999',
         },
         edge: {
           DEFAULT: '#e0e0e0',
