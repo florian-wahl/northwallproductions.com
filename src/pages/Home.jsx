@@ -7,10 +7,10 @@ import ProjectCard from '../components/ProjectCard';
 const featured = getFeatured(3);
 
 const stats = [
-  { number: '6+', label: 'Projects' },
-  { number: '3', label: 'Awards' },
-  { number: '2', label: 'Series' },
-  { number: '2021', label: 'Founded' },
+  { number: '2+', label: 'Projects' },
+  { number: '1', label: 'Movies' },
+  { number: '1', label: 'TV Series' },
+  { number: '2026', label: 'Founded' },
 ];
 
 export default function Home() {
@@ -86,18 +86,13 @@ export default function Home() {
             </h2>
             <div className="space-y-5 text-ink-muted leading-8 font-light text-[0.95rem]">
               <p>
-                Founded in 2026, NorthWall Productions was built on a simple belief: the north — its
-                silence, its severity, its extraordinary light — is one of cinema's most under-explored
-                territories.
+                Founded in 2026, NorthWall Productions was built on a simple belief: cras scelerisque faucibus volutpat. Nulla ultrices feugiat fringilla. Sed molestie mauris diam, a ullamcorper sem rhoncus et. Aliquam vitae porttitor orci, sed lobortis nunc. Nulla in nunc rhoncus, sagittis justo at, iaculis tellus. Phasellus tellus tortor.
               </p>
               <p>
-                We work with a tight-knit group of directors, cinematographers, and storytellers committed
-                to shooting on location, collaborating with local communities, and letting place inform
-                story at every level of production.
+                Quisque laoreet mauris in elit pretium scelerisque. Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus. Cras sollicitudin varius orci. Aenean tincidunt orci mollis neque euismod, et faucibus nulla tempor. Donec porttitor lectus vel nisl tincidunt, non varius sapien mollis.
               </p>
               <p>
-                Feature films, documentary series, short-form work — united by an aesthetic that prizes
-                restraint, beauty, and emotional honesty over spectacle.
+                Fusce nec libero urna. Mauris malesuada augue dolor, eget dictum odio ultrices a. Curabitur posuere, odio in lobortis egestas, purus augue ultrices purus, nec sagittis tortor erat a nulla.
               </p>
             </div>
           </div>

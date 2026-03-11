@@ -55,11 +55,11 @@ export default function Contact() {
           >
             Contact
           </h1>
-          <p className="text-ink leading-8 max-w-[46ch] font-light">
+          <p className="text-ink leading-8 max-w-[46ch]">
             Whether you're a filmmaker, distributor, journalist, or a fan — we'd love to hear from you.
           </p>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%)' }} />
+        <div className="absolute bottom-0 left-0 right-0 h-80 pointer-events-none" style={{ zIndex: 5, background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.95) 100%)' }} />
         <MountainSilhouette />
       </div>
 

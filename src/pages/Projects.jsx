@@ -4,7 +4,7 @@ import SnowCanvas from '../components/SnowCanvas';
 import MountainSilhouette from '../components/MountainSilhouette';
 
 const completed = getByStatus('completed');
-const upcoming  = getByStatus('upcoming');
+const upcoming = getByStatus('upcoming');
 
 function SectionLabel({ children, count }) {
   return (
@@ -33,12 +33,12 @@ export default function Projects() {
           >
             Our<br />Projects
           </h1>
-          <p className="text-ink leading-8 max-w-[50ch] font-light">
-            From debut short films to multi-episode series, every NorthWall project shares a
+          <p className="text-ink leading-8 max-w-[50ch]">
+            From debut short films to multi-episode series, every NorthWall Productions project shares a
             commitment to place, character, and cinematic honesty.
           </p>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none" style={{ background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%)' }} />
+        <div className="absolute bottom-0 left-0 right-0 h-80 pointer-events-none" style={{ zIndex: 5, background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.95) 100%)' }} />
         <MountainSilhouette />
       </div>
 
