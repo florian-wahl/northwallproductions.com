@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
+import Team from './pages/Team';
 import NotFound from './pages/NotFound';
 
 /** Scroll to top on route change */
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/projects"      element={<Projects />}      />
           <Route path="/projects/:id"  element={<ProjectDetail />} />
           <Route path="/contact"       element={<Contact />}       />
+          <Route path="/team"          element={<Team />}          />
           <Route path="*"              element={<NotFound />}      />
         </Routes>
       </Layout>
