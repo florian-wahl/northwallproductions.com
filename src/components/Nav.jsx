@@ -79,7 +79,7 @@ export default function Nav() {
       </nav>
 
       {menuOpen && (
-        <div className="fixed top-[72px] left-0 right-0 z-40 bg-white border-b border-edge px-8 py-6 flex flex-col gap-5 md:hidden">
+        <div className="fixed top-[72px] left-0 right-0 z-40 bg-white border-b border-edge px-8 flex flex-col md:hidden">
           {links.map(({ to, label }) => (
             <NavLink
               key={to}
@@ -87,7 +87,7 @@ export default function Nav() {
               end={to === '/'}
               onClick={closeMenu}
               className={({ isActive }) =>
-                `text-[0.72rem] font-semibold tracking-[0.18em] uppercase transition-colors
+                `py-5 text-sm font-semibold tracking-[0.18em] uppercase transition-colors border-b border-edge last:border-b-0
                 ${isActive ? 'text-ink' : 'text-ink-dim'}`
               }
             >

@@ -7,8 +7,8 @@ import ProjectCard from '../components/ProjectCard';
 const featured = getFeatured(3);
 
 const stats = [
-  { number: '2+', label: 'Projects' },
-  { number: '1', label: 'Movies' },
+  { number: '3+', label: 'Projects' },
+  { number: '2', label: 'Movies' },
   { number: '1', label: 'TV Series' },
   { number: '2026', label: 'Founded' },
 ];
