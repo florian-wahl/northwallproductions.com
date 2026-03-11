@@ -20,7 +20,7 @@ export const team = [
     id: 'florian-wahl',
     name: 'Florian Wahl',
     title: 'Co-Founder & Producer',
-    photo: null, // place headshot at public/team/florian-wahl.jpg
+    photo: 'florian-wahl.jpg', // place headshot at public/team/florian-wahl.jpg
     bio: 'Bio coming soon.',
   },
 ];

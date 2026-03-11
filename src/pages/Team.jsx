@@ -13,7 +13,7 @@ function MemberCard({ member }) {
   return (
     <div className="bg-white border border-edge">
       {/* Photo */}
-      <div className="aspect-[3/4] bg-bg-elevated overflow-hidden">
+      <div className="aspect-square bg-bg-elevated overflow-hidden">
         {photo ? (
           <img
             src={`/team/${photo}`}
