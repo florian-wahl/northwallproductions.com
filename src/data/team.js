@@ -23,4 +23,11 @@ export const team = [
     photo: 'florian-wahl.jpg', // place headshot at public/team/florian-wahl.jpg
     bio: 'Bio coming soon.',
   },
+  {
+    id: 'rhubarb',
+    name: 'Rhubarb',
+    title: 'Co-Founder & Actress',
+    photo: 'rhubarb.jpeg', // place headshot at public/team/florian-wahl.jpg
+    bio: 'Woof.',
+  },
 ];
