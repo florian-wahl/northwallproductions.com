@@ -13,7 +13,7 @@ export const team = [
     id: 'katie-north',
     name: 'Katie North',
     title: 'Co-Founder & Producer',
-    photo: null, // place headshot at public/team/katie-north.jpg
+    photo: "katie-north.jpg", // place headshot at public/team/katie-north.jpg
     bio: 'Bio coming soon.',
   },
   {

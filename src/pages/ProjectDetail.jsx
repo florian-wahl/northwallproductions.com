@@ -14,11 +14,12 @@ const statusConfig = {
 };
 
 function InfoRow({ label, value }) {
-  if (!value || value === 'TBD') return null;
+  const display = Array.isArray(value) ? value.join(', ') : value;
+  if (!display || display === 'TBD') return null;
   return (
     <div className="flex flex-col gap-1.5 py-4 border-b border-edge last:border-0">
       <span className="text-[0.6rem] font-bold tracking-[0.2em] uppercase text-ink-dim">{label}</span>
-      <span className="text-[0.9rem] text-ink font-semibold tracking-tight">{value}</span>
+      <span className="text-[0.9rem] text-ink font-semibold tracking-tight">{display}</span>
     </div>
   );
 }
@@ -29,7 +30,7 @@ export default function ProjectDetail() {
   if (!project) return <Navigate to="/projects" replace />;
 
   const { title, type, status, year, duration, rating, language,
-    posterClass, description, tags, director, producer, cinematographer, awards } = project;
+    posterClass, description, tags, director, writers, cast, producers, cinematographer, awards } = project;
 
   const gradient = posterGradients[posterClass] ?? 'bg-poster-1';
   const badge    = statusConfig[status] ?? statusConfig.upcoming;
@@ -115,7 +116,9 @@ export default function ProjectDetail() {
               <InfoRow label="Rating"          value={rating}          />
               <InfoRow label="Language"        value={language}        />
               <InfoRow label="Director"        value={director}        />
-              <InfoRow label="Producer"        value={producer}        />
+              <InfoRow label="Writers"         value={writers}         />
+              <InfoRow label="Cast"            value={cast}            />
+              <InfoRow label="Producers"       value={producers}       />
               <InfoRow label="Cinematographer" value={cinematographer} />
             </div>
           </aside>
