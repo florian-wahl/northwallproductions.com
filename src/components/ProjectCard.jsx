@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const statusConfig = {
-  completed:   { label: 'Completed',      cls: 'border border-ink/40 text-ink'         },
-  upcoming:    { label: 'Upcoming',        cls: 'border border-ink-dim text-ink-muted'   },
-  development: { label: 'In Development', cls: 'border border-ink-ghost text-ink-dim'   },
+  completed:        { label: 'Completed',        cls: 'border border-ink/40 text-ink'       },
+  'post-production': { label: 'Post-Production', cls: 'border border-ink-dim text-ink-muted' },
+  'pre-production':  { label: 'Pre-Production',  cls: 'border border-ink-ghost text-ink-dim' },
 };
 
 const posterGradients = {
@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
   return (
     <Link
       to={`/projects/${id}`}
-      className="group flex flex-col bg-white border border-edge rounded-none overflow-hidden
+      className="group flex flex-col h-full bg-white border border-edge rounded-none overflow-hidden
                  hover:border-edge-strong hover:-translate-y-1
                  hover:shadow-[0_12px_32px_rgba(0,0,0,0.10)]
                  transition-all duration-300 focus:outline-none focus-visible:ring-1 focus-visible:ring-ink"

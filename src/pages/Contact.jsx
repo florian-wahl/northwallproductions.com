@@ -53,10 +53,10 @@ export default function Contact() {
             className="font-heading font-black text-ink uppercase tracking-tight leading-none mb-6"
             style={{ fontSize: 'clamp(2.5rem, 8vw, 6rem)' }}
           >
-            Contact
+            Contact <br />Us
           </h1>
           <p className="text-ink leading-8 max-w-[46ch]">
-            Whether you're a filmmaker, distributor, journalist, or a fan — we'd love to hear from you.
+            Whether you're a fellow filmmaker, distributor, journalist, or a fan - we would love to hear from you and collaborate.
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-80 pointer-events-none" style={{ zIndex: 5, background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.95) 100%)' }} />
@@ -71,16 +71,12 @@ export default function Contact() {
           <div>
             <h2 className="font-heading font-black text-2xl text-ink uppercase tracking-tight mb-6">Let's Connect</h2>
             <p className="text-ink-muted leading-8 mb-3 font-light">
-              NorthWall Productions is based in Canada and open to collaborations worldwide.
+              NorthWall Productions is based in New York City and open to collaborations worldwide.
               We welcome inquiries from directors, writers, distributors, broadcasters, and press.
-            </p>
-            <p className="text-ink-muted leading-8 mb-10 font-light">
-              Response time is typically within two business days.
             </p>
             <div className="flex flex-col gap-3">
               <ContactMethod icon="✉" label="Email" value="hello@northwallproductions.com" href="mailto:hello@northwallproductions.com" />
-              <ContactMethod icon="◎" label="Based in" value="Canada" />
-              <ContactMethod icon="◷" label="Response Time" value="Within 2 business days" />
+              <ContactMethod icon="◎" label="Based in" value="New York City" />
             </div>
           </div>
 

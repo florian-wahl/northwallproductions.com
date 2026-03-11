@@ -134,9 +134,9 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-edge border border-edge">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {featured.map(p => (
-            <div key={p.id} className="bg-bg-base">
+            <div key={p.id}>
               <ProjectCard project={p} />
             </div>
           ))}

@@ -8,9 +8,9 @@ const posterGradients = {
 };
 
 const statusConfig = {
-  completed:   { label: 'Completed',      cls: 'border border-ink/40 text-ink'       },
-  upcoming:    { label: 'Upcoming',        cls: 'border border-ink-dim text-ink-muted' },
-  development: { label: 'In Development', cls: 'border border-edge text-ink-dim'      },
+  completed:         { label: 'Completed',        cls: 'border border-ink/40 text-ink'       },
+  'post-production': { label: 'Post-Production',  cls: 'border border-ink-dim text-ink-muted' },
+  'pre-production':  { label: 'Pre-Production',   cls: 'border border-edge text-ink-dim'      },
 };
 
 function InfoRow({ label, value }) {
