@@ -43,7 +43,7 @@ export default function Home() {
             className="text-ink-muted leading-8 max-w-[44ch] mx-auto animate-fade-up [animation-delay:0.25s] font-light"
             style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.05rem)' }}
           >
-            Independent film and television rooted in unique characters, deep stories, and comedy.
+            Independent film and television that makes us laugh, think, and cry, especially when we weren't expecting to.
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap mt-10 animate-fade-up [animation-delay:0.38s]">
@@ -86,13 +86,10 @@ export default function Home() {
             </h2>
             <div className="space-y-5 text-ink-muted leading-8 font-light text-[0.95rem]">
               <p>
-                Founded in 2026, NorthWall Productions was built on a simple belief: cras scelerisque faucibus volutpat. Nulla ultrices feugiat fringilla. Sed molestie mauris diam, a ullamcorper sem rhoncus et. Aliquam vitae porttitor orci, sed lobortis nunc. Nulla in nunc rhoncus, sagittis justo at, iaculis tellus. Phasellus tellus tortor.
+                NorthWall Productions strives to create art that makes us laugh, think, and cry, especially when we weren't expecting to.
               </p>
               <p>
-                Quisque laoreet mauris in elit pretium scelerisque. Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus. Cras sollicitudin varius orci. Aenean tincidunt orci mollis neque euismod, et faucibus nulla tempor. Donec porttitor lectus vel nisl tincidunt, non varius sapien mollis.
-              </p>
-              <p>
-                Fusce nec libero urna. Mauris malesuada augue dolor, eget dictum odio ultrices a. Curabitur posuere, odio in lobortis egestas, purus augue ultrices purus, nec sagittis tortor erat a nulla.
+                Founded by <strong>Katie North</strong>, a Tony-Nominated Producer (<em>Operation Mincemeat</em>) and Slamdance Alum (<em>Bad Survivor</em>), and <strong>Florian Wahl</strong>, a Product Executive with years of experience in financial services, consulting, and product leadership, NorthWall combines creativity and business acumen to produce film and television.
               </p>
             </div>
           </div>

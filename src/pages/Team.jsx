@@ -33,7 +33,7 @@ function MemberCard({ member }) {
       <div className="p-6 border-t border-edge">
         <p className="text-[0.6rem] font-bold tracking-[0.22em] uppercase text-ink-dim mb-1">{title}</p>
         <h2 className="font-heading font-black text-xl text-ink uppercase tracking-tight mb-4">{name}</h2>
-        <p className="text-ink-muted text-sm leading-7 font-light">{bio}</p>
+        <p className="text-ink-muted text-sm leading-7 font-light" dangerouslySetInnerHTML={{ __html: bio }} />
       </div>
     </div>
   );
@@ -57,7 +57,7 @@ export default function Team() {
             Our<br />Team
           </h1>
           <p className="text-ink leading-8 max-w-[46ch] font-light">
-            A small, focused team with a shared belief in stories that matter.
+            Meet our founders.
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-80 pointer-events-none" style={{ zIndex: 5, background: 'linear-gradient(to bottom, rgba(248,248,248,0) 0%, rgba(248,248,248,0.95) 100%)' }} />
@@ -67,7 +67,7 @@ export default function Team() {
       <div className="h-px bg-edge" />
 
       <section className="max-w-[1200px] mx-auto px-8 py-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {team.map(member => (
             <MemberCard key={member.id} member={member} />
           ))}
