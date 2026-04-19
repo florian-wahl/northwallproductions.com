@@ -7,6 +7,8 @@
  *  3. Set `status` to "completed", "post-production", or "pre-production".
  *  4. Set `posterClass` to one of "poster-1" … "poster-6"
  *     (each maps to a gradient in tailwind.config.js).
+ *  5. Optionally set `posterImage` to a path like "/images/my-film.jpg"
+ *     (place the file in public/images/). When set, it overrides the gradient.
  */
 
 export const projects = [
@@ -52,6 +54,7 @@ export const projects = [
     rating: 'TBD',
     language: 'English',
     posterClass: 'poster-2',
+    posterImage: '/images/nightfish-poster.webp',
     featured: true,
     shortDescription:
       'Nightfish follows the unlikely friendship of two overnight aquarium employees.',
@@ -76,6 +79,7 @@ export const projects = [
     rating: 'TBD',
     language: 'English',
     posterClass: 'poster-3',
+    posterImage: '/images/christmas.webp',
     featured: true,
     shortDescription:
       'When family is stifling and Christmas joy is oppressive, a group of friends escape to a cabin in the woods, only to find the house is haunted - by Christmas.',
@@ -100,12 +104,13 @@ export const projects = [
     rating: 'TBD',
     language: 'English',
     posterClass: 'poster-6',
+    posterImage: '/images/nana-vs-time-poster.webp',
     featured: true,
     shortDescription:
       'A burnout granddaughter and her wildcard Nana race against dementia to finish Nana’s insane bucket list.',
     description: [
       'A burnout granddaughter and her wildcard Nana race against dementia to finish Nana’s insane bucket list.',
-      'Plot Overview Stuck in a dead-end job and afraid of getting old with nothing to show for it, Ray quits and convinces her Nana to come on a wild adventure. Meanwhile, the rest of the family is very distressed about this “kidnapping,” and do everything they can to track Ray and Nana down. Tackling everything from “flirt with a coal miner” to “do witchcraft,” Ray and Nana travel across the country on their quest to do everything on Nana’s bucket list before dementia and Uncle Dick catch up with them.',
+      'Plot Overview: Stuck in a dead-end job and afraid of getting old with nothing to show for it, Ray quits and convinces her Nana to come on a wild adventure. Meanwhile, the rest of the family is very distressed about this “kidnapping,” and do everything they can to track Ray and Nana down. Tackling everything from “flirt with a coal miner” to “do witchcraft,” Ray and Nana travel across the country on their quest to do everything on Nana’s bucket list before dementia and Uncle Dick catch up with them.',
       'Katie North wrote Nana vs. Time after her grandmother was diagnosed with dementia, and Katie was hit with the shockingly commonplace knowledge that no one we love will live forever. So we better do every stupid thing we can with them now.'
     ],
     tags: ['Comedy', 'Drama', 'Family'],

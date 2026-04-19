@@ -16,7 +16,7 @@ const posterGradients = {
 };
 
 export default function ProjectCard({ project }) {
-  const { id, title, type, status, year, posterClass, shortDescription, tags } = project;
+  const { id, title, type, status, year, posterClass, posterImage, shortDescription, tags } = project;
   const badge    = statusConfig[status] ?? statusConfig.upcoming;
   const gradient = posterGradients[posterClass] ?? 'bg-poster-1';
 
@@ -28,9 +28,17 @@ export default function ProjectCard({ project }) {
                  hover:shadow-[0_12px_32px_rgba(0,0,0,0.10)]
                  transition-all duration-300 focus:outline-none focus-visible:ring-1 focus-visible:ring-ink"
     >
-      {/* Poster — B&W landscape gradient */}
+      {/* Poster — photo or gradient fallback */}
       <div className="relative h-52 overflow-hidden flex-shrink-0">
-        <div className={`absolute inset-0 ${gradient} transition-transform duration-600 group-hover:scale-103`} aria-hidden="true" />
+        {posterImage ? (
+          <img
+            src={posterImage}
+            alt={`${title} poster`}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-600 group-hover:scale-103"
+          />
+        ) : (
+          <div className={`absolute inset-0 ${gradient} transition-transform duration-600 group-hover:scale-103`} aria-hidden="true" />
+        )}
         {/* Subtle vignette */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" aria-hidden="true" />
         {/* Status badge */}
