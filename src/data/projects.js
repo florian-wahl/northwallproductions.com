@@ -102,11 +102,11 @@ export const projects = [
     posterClass: 'poster-6',
     featured: true,
     shortDescription:
-      'Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra.',
+      'A burnout granddaughter and her wildcard Nana race against dementia to finish Nana’s insane bucket list.',
     description: [
-      'Phasellus tellus tortor, consequat quis dui in, vestibulum lacinia dolor. Integer hendrerit cursus rutrum. Quisque laoreet mauris in elit pretium scelerisque. Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
-      'Nam et sem ut massa feugiat suscipit. Nullam consequat euismod viverra.',
-      'Nulla luctus sem a ipsum posuere dictum ut eget diam. Sed sagittis aliquam mi sit amet tempus. Morbi at vulputate lacus.',
+      'A burnout granddaughter and her wildcard Nana race against dementia to finish Nana’s insane bucket list.',
+      'Plot Overview Stuck in a dead-end job and afraid of getting old with nothing to show for it, Ray quits and convinces her Nana to come on a wild adventure. Meanwhile, the rest of the family is very distressed about this “kidnapping,” and do everything they can to track Ray and Nana down. Tackling everything from “flirt with a coal miner” to “do witchcraft,” Ray and Nana travel across the country on their quest to do everything on Nana’s bucket list before dementia and Uncle Dick catch up with them.',
+      'Katie North wrote Nana vs. Time after her grandmother was diagnosed with dementia, and Katie was hit with the shockingly commonplace knowledge that no one we love will live forever. So we better do every stupid thing we can with them now.'
     ],
     tags: ['Comedy', 'Drama', 'Family'],
     director: 'TBD',
