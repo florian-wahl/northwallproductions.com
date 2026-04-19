@@ -30,7 +30,7 @@ export default function ProjectDetail() {
   if (!project) return <Navigate to="/projects" replace />;
 
   const { title, type, status, year, duration, rating, language,
-    posterClass, description, tags, director, writers, cast, producers, cinematographer, awards } = project;
+    posterClass, posterImage, description, tags, director, writers, cast, producers, cinematographer, awards } = project;
 
   const gradient = posterGradients[posterClass] ?? 'bg-poster-1';
   const badge    = statusConfig[status] ?? statusConfig.upcoming;
@@ -40,7 +40,15 @@ export default function ProjectDetail() {
 
       {/* Hero poster */}
       <div className="relative h-[50vh] min-h-[340px] flex items-end overflow-hidden">
-        <div className={`absolute inset-0 ${gradient}`} />
+        {posterImage ? (
+          <img
+            src={posterImage}
+            alt={`${title} poster`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className={`absolute inset-0 ${gradient}`} />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#f8f8f8] via-[#f8f8f8]/20 to-transparent" />
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-8 pb-10 w-full">

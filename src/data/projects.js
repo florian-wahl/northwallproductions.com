@@ -24,6 +24,7 @@ export const projects = [
     rating: 'NR',
     language: 'English',
     posterClass: 'poster-1',
+    posterImage: '/images/nightfish-poster.webp',
     featured: false,
     shortDescription:
       'Nightfish follows the unlikely friendship of two overnight aquarium employees.',
