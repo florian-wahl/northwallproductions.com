@@ -45,38 +45,32 @@ export default function Projects() {
 
       <div className="h-px bg-edge" />
 
-      <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-8">
-        <SectionLabel count={completed.length}>Completed</SectionLabel>
-        {completed.length > 0 ? (
+      {completed.length > 0 && (
+        <section className="max-w-[1200px] mx-auto px-8 pt-16 pb-8">
+          <SectionLabel count={completed.length}>Completed</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {completed.map(p => <div key={p.id}><ProjectCard project={p} /></div>)}
           </div>
-        ) : (
-          <p className="text-ink-muted text-sm font-light">No completed projects yet.</p>
-        )}
-      </section>
+        </section>
+      )}
 
-      <section className="max-w-[1200px] mx-auto px-8 pt-14 pb-8">
-        <SectionLabel count={postProduction.length}>Post-Production</SectionLabel>
-        {postProduction.length > 0 ? (
+      {postProduction.length > 0 && (
+        <section className="max-w-[1200px] mx-auto px-8 pt-14 pb-8">
+          <SectionLabel count={postProduction.length}>Post-Production</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {postProduction.map(p => <div key={p.id}><ProjectCard project={p} /></div>)}
           </div>
-        ) : (
-          <p className="text-ink-muted text-sm font-light">No projects in post-production at this time.</p>
-        )}
-      </section>
+        </section>
+      )}
 
-      <section className="max-w-[1200px] mx-auto px-8 pt-14 pb-24">
-        <SectionLabel count={preProduction.length}>Pre-Production</SectionLabel>
-        {preProduction.length > 0 ? (
+      {preProduction.length > 0 && (
+        <section className="max-w-[1200px] mx-auto px-8 pt-14 pb-24">
+          <SectionLabel count={preProduction.length}>Pre-Production</SectionLabel>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {preProduction.map(p => <div key={p.id}><ProjectCard project={p} /></div>)}
           </div>
-        ) : (
-          <p className="text-ink-muted text-sm font-light">No projects in pre-production at this time.</p>
-        )}
-      </section>
+        </section>
+      )}
 
     </div>
   );
