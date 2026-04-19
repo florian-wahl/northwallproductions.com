@@ -2,9 +2,10 @@ import { useState } from 'react';
 import SnowCanvas from '../components/SnowCanvas';
 import MountainSilhouette from '../components/MountainSilhouette';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+// Get your free access key at web3forms.com — enter hello@northwallproductions.com, verify the email, paste the key here.
+const WEB3FORMS_ACCESS_KEY = '347711a6-40d5-4e15-8969-47077a1d5f2c';
 
-const subjects = ['General Inquiry', 'Project Collaboration', 'Distribution / Licensing', 'Press & Media', 'Other'];
+const subjects = ['General Inquiry', 'Project Collaboration'];
 
 function ContactMethod({ icon, label, value, href }) {
   const inner = (
@@ -28,7 +29,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST', body: new FormData(e.target), headers: { Accept: 'application/json' },
       });
       setStatus(res.ok ? 'success' : 'error');
@@ -90,6 +91,8 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
+                <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+                <input type="hidden" name="from_name" value="NorthWall Productions Contact Form" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className="block text-[0.62rem] font-bold tracking-[0.2em] uppercase text-ink-dim mb-2">
